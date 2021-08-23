@@ -1,24 +1,29 @@
-# README
+# users テーブル
+| Column          | Type       | Options                  |
+|-----------------|----------- |--------------------------|
+| nickname        | string     | null: false              |
+| email           | string     | null; false,unique: true |
+| password        | string     | null: false              |
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+has_many :ramen
+has_many :comments
 
-Things you may want to cover:
+# ramen テーブル
+| Column          | Type       | Options                  |
+|-----------------|----------- |--------------------------|
+| store_name      | string     | null: false              |
+| star_id         | integer    | null: false              |
+| text            | text       | null: false              |
 
-* Ruby version
+belongs_to :user
+has_many :comments
 
-* System dependencies
+# comments テーブル
+| Column          | Type       | Options           |
+|-----------------|----------- |-------------------|
+| user            | references | foreign_key: true |
+| ramen           | references | foreign_key: true |
+| text            | text       | null: false       |
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+belongs_to :user
+belongs_to :ramen
