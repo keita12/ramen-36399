@@ -12,11 +12,13 @@ ul,li {
   padding: 0;
   margin: 0;
 }
-.main{
-	background-image: url("pic01 (1).jpeg");
-	height: 394px;
-}
+
 .login{
+	text-align: right;
+	padding: 20px;
+	background-color: white;
+}
+.logout{
 	text-align: right;
 	padding: 20px;
 	background-color: white;
@@ -37,3 +39,6 @@ ul,li {
 	width: 100vw;
 	padding: 0, 88px, 0, 88px;
 }
+// .user-nickname{
+// 	font-size: 23px;
+// }

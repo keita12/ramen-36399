@@ -1,13 +1,25 @@
 
 <div class='main'>
+
+		<% unless user_signed_in? %>
 	<div class='login'>
-		<%= link_to "" do %>
+		<%= link_to new_user_session_path do %>
 		<button class="btn">ログイン</button>
 		<%end%>
-		<%= link_to "" do %>
+		<%= link_to new_user_registration_path do %>
 		 <button class="btn1">新規登録</button>
 		<%end%>
+		</div>
+	<% else %>
+	<div class='logout'>
+	<%# <%= link_to current_user.nickname + "", "#", class: "user-nickname" %>  
+		<%= link_to destroy_user_session_path, method: :delete do %>
+		 <button class="btn">ログアウト</button>
+		<%end%>
+		<%= link_to "" do %>
+		 <button class="btn1">投稿する</button>
+		<%end%>
 	</div>
+	<% end %>
 	 <%= image_tag "pic01.jpeg", class:"login-image" %>
-
 </div>
