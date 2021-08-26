@@ -14,14 +14,17 @@ ul,li {
 }
 
 .login{
+	background-image: url(pic02.jpeg);
 	text-align: right;
 	padding: 20px;
-	background-color: white;
-}
+	height: 409px;
+}	
+
 .logout{
+	background-image: url(pic02.jpeg);
+	height: 409px;
 	text-align: right;
 	padding: 20px;
-	background-color: white;
 }
 .btn{
 	height: 40px;
@@ -42,3 +45,16 @@ ul,li {
 // .user-nickname{
 // 	font-size: 23px;
 // }
+.content1{
+	text-align: left;
+	font-size: 43px;
+	writing-mode: vertical-rl;
+	color: black;
+	margin-left: 55px;
+	font-family: sans-serif;
+
+}
+.content{
+	text-align: center;
+	font-size: 30px;
+}

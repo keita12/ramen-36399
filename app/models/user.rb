@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :ramen
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 

@@ -1,0 +1,16 @@
+<%= form_with model: @ramen, url:ramen_path, local: true do |f| %>
+	<div class="ramen-box">
+	新規投稿<br />
+	<%= f.label :image, "ラーメンの写真" %>
+	    <%= f.file_field :image, id:"ramen_image" %><br />
+		<%= f.text_field :store_name, class:"title", placeholder:"店名" %><br />
+		<%= f.text_field :ramen_name, class:"title", placeholder:"商品名" %><br />
+		<%= f.text_area :text, class:"text", placeholder:"テキスト" %><br />
+		オススメ度<br />
+		<%= f.collection_select(:star_id, Star.all, :id, :name, {}, {class:"star-select"}) %><br />
+		<%= f.submit "投稿する" ,class:"btn2" %><br />
+		<%= link_to root_path do%>
+		<button class="btn2">戻る</button>
+		<%end%>
+	</div>
+<% end %>

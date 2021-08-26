@@ -12,8 +12,10 @@ has_many :comments
 | Column          | Type       | Options                  |
 |-----------------|----------- |--------------------------|
 | store_name      | string     | null: false              |
+| ramen_name      | string     | null: false              |
 | star_id         | integer    | null: false              |
 | text            | text       | null: false              |
+| user            | references | foreign_key: true        |
 
 belongs_to :user
 has_many :comments

@@ -1,0 +1,26 @@
+.ramen-box {
+  height:800px;
+	background-image: url(pic.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  height: 30px;
+  width: 300px;
+  margin: 20px;
+}
+.text {
+	height:100px ;
+	width: 300px;
+	resize: none;
+}
+.star-select{
+	height: 20px;
+	width: 250px;
+}
+.btn2{
+	width: 150px;
+	margin-top: 20px;
+}
