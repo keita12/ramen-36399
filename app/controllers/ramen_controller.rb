@@ -1,6 +1,6 @@
 class RamenController < ApplicationController
 	def index
-	
+		@ramen = Ramen.all
 	end
 	def new
 		@ramen = Ramen.new
