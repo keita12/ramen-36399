@@ -42,9 +42,6 @@ ul,li {
 	width: 100vw;
 	padding: 0, 88px, 0, 88px;
 }
-// .user-nickname{
-// 	font-size: 23px;
-// }
 .content1{
 	text-align: left;
 	font-size: 43px;
@@ -57,4 +54,29 @@ ul,li {
 .content{
 	text-align: center;
 	font-size: 30px;
+}
+.ramen-contents{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+flex-wrap: wrap;
+width: 100vw;
+}
+
+.ramen-image{
+width: 24vw;
+height: 275px;
+}
+
+.ramen-info{
+	text-align: center;
+}
+.store{
+font-size: 20px;
+}
+.name{
+
+}
+.star{
+
 }

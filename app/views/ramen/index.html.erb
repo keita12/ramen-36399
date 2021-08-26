@@ -21,6 +21,24 @@
 		<div class = 'content1'>上質な一杯を求めて</div>
 	</div>
 	<% end %>
-	 <%# <%= image_tag "pic01.jpeg", class:"login-image" %> 
 	 		<div class='content'>投稿一覧</div>
+			 <ul class='ramen-contents'>
+			 	<% @ramen.each do |ramen| %>
+				<li class='list'>
+				<div class='ramen-img-content'>
+					<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
+				</div>
+				<div class = 'ramen-info'>
+					<div class = 'store'>
+					<%= '店名:' + ramen.store_name %>
+					<div class="name">
+        	<%= '商品名:' + ramen.ramen_name %>
+      		</div>
+					<div class="star">
+        	<%= 'オススメ度:' + ramen.star.name %>
+      		</div>
+				</div>
+				</li>
+				<% end %>
+			 </ul>
 </div>
