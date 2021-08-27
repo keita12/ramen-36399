@@ -25,9 +25,11 @@
 			 <ul class='ramen-contents'>
 			 	<% @ramen.each do |ramen| %>
 				<li class='list'>
+				<%= link_to raman_path(ramen.id) do%>
 				<div class='ramen-img-content'>
 					<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
 				</div>
+				<% end %>
 				<div class = 'ramen-info'>
 					<div class = 'store'>
 					<%= '店名:' + ramen.store_name %>
