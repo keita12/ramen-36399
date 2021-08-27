@@ -27,6 +27,11 @@ class RamenController < ApplicationController
 			render :edit
 		end
 	end
+	def destroy
+		@ramen = Ramen.find(params[:id])
+		@ramen.destroy
+		redirect_to root_path
+	end
 	private
 	def ramen_params
 		params.require(:ramen).permit(:store_name,:ramen_name,:star_id, :image,:text).merge(user_id: current_user.id)
