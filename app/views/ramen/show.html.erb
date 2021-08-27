@@ -1,0 +1,39 @@
+	<div class = 'showmain2'>
+		<%=link_to @ramen.user.nickname + 'さんの投稿', "#",class: 'showuser' %>
+				<div class='showramen-img'>
+					<%= image_tag @ramen.image, class: 'showramen-image'  %>
+				</div>
+				<div class = 'showramen-info'>
+					<div class = 'store'>
+					<%= '店名:' + @ramen.store_name %>
+					<div class="showname">
+        	<%= '商品名:' + @ramen.ramen_name %>
+      		</div>
+					<div class="showstar">
+        	<%= 'オススメ度:' + @ramen.star.name %>
+      		</div>
+					<%if @ramen.text!= '' %>
+					<div class="showtext">
+        	<%= '感想:' + @ramen.text %>
+      		</div>
+					<%end%>
+				</div>
+		<% if user_signed_in? && current_user.id == @ramen.user_id %>
+      <ul class="showlist">
+        <li>
+          <%= link_to edit_raman_path(@ramen.id), method: :get do %>
+					<button class="btn4">編集</button>
+					<%end%>
+        </li>
+        <li>
+          <%= link_to '', method: :delete do %>
+					<button class="btn4">削除</button>
+					<%end%>
+        </li>
+      </ul>
+    <% end %>
+		<%= link_to root_path do%>
+					<button class="btn4">戻る</button>
+					<%end%>
+	</div>
+	</div>

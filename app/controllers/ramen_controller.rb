@@ -13,8 +13,22 @@ class RamenController < ApplicationController
       render :new
     end
 	end
+	def show
+		@ramen = Ramen.find(params[:id])
+	end
+	def edit
+		@ramen = Ramen.find(params[:id])
+	end
+	def update
+		@ramen = Ramen.find(params[:id])
+		if @ramen.update(ramen_params)
+			redirect_to raman_path
+		else
+			render :edit
+		end
+	end
 	private
 	def ramen_params
-		params.require(:ramen).permit(:store_name,:ramen_name,:star_id, :image).merge(user_id: current_user.id)
+		params.require(:ramen).permit(:store_name,:ramen_name,:star_id, :image,:text).merge(user_id: current_user.id)
 	end
 end

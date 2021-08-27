@@ -1,0 +1,32 @@
+.showmain{
+
+}
+.showmain2{
+	height: 100vh;
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+	background-image: url(pic.jpeg);
+
+}
+.showuser{
+	margin-top: 80px;
+	font-size: 20px;
+}
+.showramen-image{
+	height: 300px;
+	width: 350px;
+}
+.showramen-info{
+	margin-left: 30px;
+}
+
+.btn4{
+	margin-top: 15px;
+	margin-left: 10px;
+	width: 150px;
+}
+.showlist{
+	list-style-type: none;
+
+}
