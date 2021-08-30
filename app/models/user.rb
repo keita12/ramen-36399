@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :ramen
+  has_many :comments
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 

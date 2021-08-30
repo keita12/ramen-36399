@@ -15,6 +15,8 @@ class RamenController < ApplicationController
 	end
 	def show
 		@ramen = Ramen.find(params[:id])
+		@comment = Comment.new
+		@comments = @ramen.comments.includes(:user)
 	end
 	def edit
 		@ramen = Ramen.find(params[:id])
