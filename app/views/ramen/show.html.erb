@@ -40,7 +40,7 @@
 	<div class="commentar">
     <% if user_signed_in? %>
       <%= form_with(model: [@ramen, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %><br>
         <%= form.submit "SEND" %>
       <% end %>
 		<% end %>

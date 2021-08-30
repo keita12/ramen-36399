@@ -28,5 +28,14 @@
 }
 .showlist{
 	list-style-type: none;
-
+}
+.commentar{
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.comments{
+	display: flex;
+  align-items: center;
+  flex-direction: column;
 }
