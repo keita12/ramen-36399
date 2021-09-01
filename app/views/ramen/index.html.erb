@@ -1,4 +1,4 @@
-
+<header class='top-page-header'>	
 <div class='main'>
 		<% unless user_signed_in? %>
 	<div class='login'>
@@ -8,7 +8,6 @@
 		<%= link_to new_user_registration_path do %>
 		 <button class="btn1">新規登録</button>
 		<%end%>
-		<div class = 'content1'>上質な一杯を求めて</div>
 		</div>
 	<% else %>
 	<div class='logout'>
@@ -18,29 +17,29 @@
 		<%= link_to new_raman_path do %>
 		 <button class="btn1">投稿する</button>
 		<%end%>
-		<div class = 'content1'>上質な一杯を求めて</div>
 	</div>
 	<% end %>
+</header>
 <div class='content'>投稿一覧</div>
-<ul class='ramen-contents'>
-			 	<% @ramen.each do |ramen| %>
-				<li class='list'>
-				<%= link_to raman_path(ramen.id) do%>
-				<div class='ramen-img-content'>
-					<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
-				</div>
-				<% end %>
-				<div class = 'ramen-info'>
-					<div class = 'store'>
-					<%= '店名:' + ramen.store_name %>
-					<div class="name">
-        	<%= '商品名:' + ramen.ramen_name %>
-      		</div>
-					<div class="star">
-        	<%= 'オススメ度:' + ramen.star.name %>
-      		</div>
-				</div>
-				</li>
-				<% end %>
-			 </ul>
+ <ul class='ramen-contents'>
+	<% @ramen.each do |ramen| %>
+	<li class='list'>
+		<%= link_to raman_path(ramen.id) do%>
+			<div class='ramen-img-content'>
+				<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
+			</div>
+		<% end %>
+		<div class = 'ramen-info'>
+			<div class = 'store'>
+			<%= '店名:' + ramen.store_name %>
+			<div class="name">
+    		<%= '商品名:' + ramen.ramen_name %>
+      </div>
+			<div class="star">
+      	<%= 'オススメ度:' + ramen.star.name %>
+    	</div>
+		</div>
+	</li>
+	<% end %>
+ </ul>
 </div> 
