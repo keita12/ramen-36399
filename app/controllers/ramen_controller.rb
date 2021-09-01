@@ -34,6 +34,9 @@ class RamenController < ApplicationController
 		@ramen.destroy
 		redirect_to root_path
 	end
+	def search
+		@ramen = Ramen.search(params[:keyword])
+	end
 	private
 	def ramen_params
 		params.require(:ramen).permit(:store_name,:ramen_name,:star_id, :image,:text).merge(user_id: current_user.id)

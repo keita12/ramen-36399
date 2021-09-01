@@ -21,6 +21,10 @@
 	<% end %>
 </header>
 <div class='content'>投稿一覧</div>
+<%= form_with(url: search_ramen_path, local: true, method: :get, class: "search-form") do |form| %>
+  <%= form.text_field :keyword, placeholder: "店名を検索する", class: "search-input" %>
+  <%= form.submit "検索", class: "search-btn" %>
+<% end %>
  <ul class='ramen-contents'>
 	<% @ramen.each do |ramen| %>
 	<li class='list'>
