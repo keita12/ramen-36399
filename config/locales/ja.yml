@@ -1,0 +1,11 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+      ramen:
+        text: テキスト
+        image: 画像
+        ramen_name: 商品名
+        store_name: 店名
+        star_id: オススメ度

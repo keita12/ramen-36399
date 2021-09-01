@@ -6,5 +6,5 @@ class Ramen < ApplicationRecord
 	extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :star
 	validates :ramen_name,:image,:store_name,:star_id, presence: true
-	validates :star_id, numericality: { other_than: 1 , message: "can't be blank"} 
+	validates :star_id, numericality: { other_than: 1 , message: "を入力してください"} 
 end
