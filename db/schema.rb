@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_27_092218) do
+ActiveRecord::Schema.define(version: 2021_09_02_053603) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -43,6 +43,15 @@ ActiveRecord::Schema.define(version: 2021_08_27_092218) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "ramen_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["ramen_id"], name: "index_likes_on_ramen_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
   create_table "ramen", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "store_name"
     t.integer "star_id"
@@ -70,5 +79,7 @@ ActiveRecord::Schema.define(version: 2021_08_27_092218) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "comments", "ramen", column: "ramen_id"
   add_foreign_key "comments", "users"
+  add_foreign_key "likes", "ramen", column: "ramen_id"
+  add_foreign_key "likes", "users"
   add_foreign_key "ramen", "users"
 end

@@ -29,3 +29,9 @@ has_many :comments
 
 belongs_to :user
 belongs_to :ramen
+
+# likes テーブル
+| Column          | Type       | Options           |
+|-----------------|----------- |-------------------|
+| user            | references | foreign_key: true |
+| ramen           | references | foreign_key: true |
