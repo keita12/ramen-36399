@@ -61,13 +61,23 @@ justify-content: space-around;
 list-style-type: none;
 flex-wrap: wrap;
 width: 100vw;
+
 }
 
 .ramen-image{
+margin-top: 10px;
 width: 24vw;
 height: 275px;
+transition-duration: 0.5s;
 }
-
+.ramen-image img{
+  cursor: pointer;
+}
+.ramen-image:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+}
 .ramen-info{
 	text-align: center;
 }
