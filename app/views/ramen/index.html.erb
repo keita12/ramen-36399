@@ -45,6 +45,9 @@
 			<div class="star">
       	<%= 'オススメ度:' + ramen.star.name %>
     	</div>
+			<div id="likes_buttons_<%= ramen.id %>">
+   			<%= render partial: 'likes/like', locals: {ramen: ramen} %>
+ 			</div>
 		</div>
 	</li>
 	<% end %>
