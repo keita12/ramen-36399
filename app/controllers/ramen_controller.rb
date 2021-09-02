@@ -1,5 +1,5 @@
 class RamenController < ApplicationController
-	before_action :authenticate_user!, except: [:index, :show]
+	before_action :authenticate_user!, except: [:index, :show, :search]
 	before_action :set_ramen, only: [:show, :edit, :update,:destroy]
 	before_action :move_to_edit, only: [:edit,:update]
 

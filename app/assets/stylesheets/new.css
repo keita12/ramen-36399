@@ -9,22 +9,56 @@
 .title {
   height: 30px;
   width: 300px;
-  margin: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .text {
 	height:100px ;
 	width: 300px;
 	resize: none;
+
 }
 .star-select{
 	height: 20px;
 	width: 250px;
 }
+	
 .btn2{
 	width: 150px;
-	margin-top: 20px;
+	margin-bottom: 15px;
 }
-/* .btn{
-	width: 150px;
-	margin-top: 20px;
-} */
+.btnA{
+	width: 100px;
+	margin-top: 15px;
+}
+
+.loading-icon {
+	margin-left: 400px;
+	margin-top: 40px;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  
+  animation: rotate 1s steps(8) 0s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.naruto-icon{
+	width: 30px;
+}
+.btn55{
+	width: 100px;
+	margin-top: 15px;
+}
+.btn5-5{
+margin-top: 15px;
+margin-left: 50px;
+}

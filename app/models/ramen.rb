@@ -6,7 +6,6 @@ class Ramen < ApplicationRecord
     if search != ""
       Ramen.where('store_name LIKE(?)', "%#{search}%")
 			Ramen.where('ramen_name LIKE(?)', "%#{search}%")
-			Ramen.where('star_id LIKE(?)', "%#{search}%")
     else
       Ramen.all
     end
