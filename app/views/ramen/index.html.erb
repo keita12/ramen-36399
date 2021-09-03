@@ -1,55 +1,60 @@
-<header class='top-page-header'>	
-<div class='main'>
+<header id='header'>	
+		<script src="index.js"></script>
 		<% unless user_signed_in? %>
-	<div class='login'>
-		<%= link_to new_user_session_path do %>
-		<button class="btn">ログイン</button>
-		<%end%>
-		<%= link_to new_user_registration_path do %>
-		 <button class="btn1">新規登録</button>
-		<%end%>
-		</div>
-	<% else %>
-	<div class='logout'>
-		<%= link_to destroy_user_session_path, method: :delete do %>
-		 <button class="btn">ログアウト</button>
-		<%end%>
-		<%= link_to new_raman_path do %>
-		 <button class="btn1">投稿する</button>
-		<%end%>
-	</div>
-	<% end %>
-	<div class="loading-icon">
-		 	<%= image_tag "なると.jpeg", class:"naruto-icon" %>
-		 </div>
-</header>
-<div class='content'>投稿一覧</div>
-<%= form_with(url: search_ramen_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
-  <%= form.submit "検索", class: "search-btn" %>
-<% end %>
- <ul class='ramen-contents'>
-	<% @ramen.each do |ramen| %>
-	<li class='list'>
-		<%= link_to raman_path(ramen.id) do%>
-			<div class='ramen-img-content'>
-				<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
+			<div class='login'>
+				<%= link_to new_user_session_path do %>
+					<button class="btn">ログイン</button>
+				<%end%>
+				<%= link_to new_user_registration_path do %>
+					<button class="btn1">新規登録</button>
+				<%end%>
+			</div>
+		<% else %>
+			<div class='logout'>
+				<%= link_to current_user.nickname, user_path(current_user.id), class: "user-nickname"%>
+				<%= link_to destroy_user_session_path, method: :delete do %>
+					<button class="btn">ログアウト</button>
+				<%end%>
+				<%= link_to new_raman_path do %>
+					<button class="btn1">投稿する</button>
+				<%end%>
 			</div>
 		<% end %>
-		<div class = 'ramen-info'>
-			<div class = 'store'>
-			<%= '店名:' + ramen.store_name %>
-			<div class="name">
-    		<%= '商品名:' + ramen.ramen_name %>
-      </div>
-			<div class="star">
-      	<%= 'オススメ度:' + ramen.star.name %>
-    	</div>
-			<div id="likes_buttons_<%= ramen.id %>">
-   			<%= render partial: 'likes/like', locals: {ramen: ramen} %>
- 			</div>
+</header>
+	<div class='main'>
+	</div> 
+
+		<div class="loading-icon">
+				<%= image_tag "なると.jpeg", class:"naruto-icon" %>
 		</div>
-	</li>
-	<% end %>
- </ul>
-</div> 
+<div class= 'main-contents'>
+		<div class='content'>投稿一覧</div>
+		<%= form_with(url: search_ramen_path, local: true, method: :get, class: "search-form") do |form| %>
+			<%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+			<%= form.submit "検索", class: "search-btn" %>
+		<% end %>
+		<ul class='ramen-contents'>
+			<% @ramen.each do |ramen| %>
+			<li class='list'>
+				<%= link_to raman_path(ramen.id) do%>
+					<div class='ramen-img-content'>
+						<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
+					</div>
+				<% end %>
+				<div class = 'ramen-info'>
+					<div class = 'store'>
+					<%= '店名:' + ramen.store_name %>
+					<div class="name">
+						<%= '商品名:' + ramen.ramen_name %>
+					</div>
+					<div class="star">
+						<%= 'オススメ度:' + ramen.star.name %>
+					</div>
+					<div id="likes_buttons_<%= ramen.id %>">
+						<%= render partial: 'likes/like', locals: {ramen: ramen} %>
+					</div>
+				</div>
+			</li>
+			<% end %>
+		</ul>
+</div>

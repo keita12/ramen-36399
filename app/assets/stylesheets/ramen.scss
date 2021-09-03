@@ -12,19 +12,24 @@ ul,li {
   padding: 0;
   margin: 0;
 }
-
-.login{
+.header{
+	height: 47px;
+	width: 100vw;
+	position: fixed;
+	right: 0;
+}
+.main{
 	background-image: url(2.jpg);
-	height: 447px;
+	height: 487px;
+}
+.login{
 	text-align: right;
-	padding: 20px;
+	padding: 7px;
 }	
 
 .logout{
-	background-image: url(2.jpg);
-	height: 447px;
 	text-align: right;
-	padding: 20px;
+	padding: 7px;
 }
 .btn{
 	height: 40px;
@@ -35,7 +40,7 @@ ul,li {
 	height: 40px;
 	color:black;
 	width: 130px;
-	margin-right: 20px;
+	margin-right: 40px;
 }
 .login-image{
 	height: 400px;
