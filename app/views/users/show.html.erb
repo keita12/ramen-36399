@@ -7,3 +7,6 @@
 <div class='content'>
 		<%= @user.nickname + 'さんがいいねした投稿' %>
 </div>
+		<ul class='ramen-contents'>
+			<%= render partial: "ramen/ramen", collection: @like_ramens %>
+		</ul>
