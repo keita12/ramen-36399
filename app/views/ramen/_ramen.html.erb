@@ -4,14 +4,4 @@
 					<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
 				</div>
 				<% end %>
-				<div class = 'ramen-info'>
-					<div class = 'store'>
-					<%= '店名:' + ramen.store_name %>
-					<div class="name">
-        	<%= '商品名:' + ramen.ramen_name %>
-      		</div>
-					<div class="star">
-        	<%= 'オススメ度:' + ramen.star.name %>
-      		</div>
-				</div>
 				</li>

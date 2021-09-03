@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :ramen
+  has_many :ramens, class_name: 'Ramen'
   has_many :likes
   has_many :comments
   devise :database_authenticatable, :registerable,

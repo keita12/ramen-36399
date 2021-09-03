@@ -23,8 +23,8 @@
 
 .btn4{
 	margin-top: 15px;
-	margin-left: 10px;
 	width: 150px;
+	margin-left: 30px;
 }
 .showlist{
 	list-style-type: none;
@@ -34,10 +34,10 @@
   align-items: center;
   flex-direction: column;
 	margin-top: 20px;
-	margin-right: 30px;
+	margin-right: 40px;
 }
 .btn6{
-	margin-left: 60px;
+	margin-left: 80px;
 
 }
 .comments{

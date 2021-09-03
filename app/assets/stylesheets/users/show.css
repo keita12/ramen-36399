@@ -1,0 +1,19 @@
+.ramen-contents{
+	display: flex;
+justify-content: space-around;
+list-style-type: none;
+flex-wrap: wrap;
+width: 100vw;
+}
+.ramen-image{
+	margin-top: 10px;
+	width: 24vw;
+	height: 275px;
+	transition-duration: 0.5s;
+	}
+	.ramen-info{
+		text-align: center;
+	}
+	.store{
+	font-size: 20px;
+	}

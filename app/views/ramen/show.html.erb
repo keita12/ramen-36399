@@ -1,5 +1,5 @@
 	<div class = 'showmain2'>
-		<%=link_to @ramen.user.nickname + 'さんの投稿', "#",class: 'showuser' %>
+		<%=link_to @ramen.user.nickname + 'さんの投稿', user_path(@ramen.user_id),class: 'showuser' %>
 				<div class='showramen-img'>
 					<%= image_tag @ramen.image, class: 'showramen-image'  %>
 				</div>
@@ -17,6 +17,9 @@
         	<%= '感想:' + @ramen.text %>
       		</div>
 					<%end%>
+					<div id="likes_buttons_<%= @ramen.id %>">
+						<%= render partial: 'likes/like', locals: {ramen: @ramen} %>
+					</div>
 				</div>
 		<% if user_signed_in? && current_user.id == @ramen.user_id %>
       <ul class="showlist">
@@ -30,7 +33,6 @@
 					<button class="btn4">削除</button>
 					<%end%>
         </li>
-      </ul>
     <% end %>
 			<%= link_to root_path do%>
 					<button class="btn4">戻る</button>
@@ -55,4 +57,6 @@
 						</p>
 					<% end %>
 				</div>
+		  </ul>
+
 	</div>

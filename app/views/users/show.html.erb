@@ -1,1 +1,9 @@
-aa
+<div class='content'>
+		<%= @user.nickname + 'さんの投稿一覧' %>
+</div>
+			<ul class='ramen-contents'>
+				<%= render partial: 'ramen/ramen', collection: @user.ramens%>
+			</ul>
+<div class='content'>
+		<%= @user.nickname + 'さんがいいねした投稿' %>
+</div>
