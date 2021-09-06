@@ -35,10 +35,10 @@
         </li>
     <% end %>
 			<%= link_to root_path do%>
-					<button class="btn4">戻る</button>
+					<button class="btn4">ホームへ戻る</button>
 			<%end%>
 		<div class="commentar">
-    <% if user_signed_in? %>
+    		<% if user_signed_in? %>
       <%= form_with(model: [@ramen, @comment], local: true) do |form| %>
         <%= form.text_area :text, placeholder: "コメントする", rows: "2" %><br>
 		</div>
@@ -48,8 +48,8 @@
       <% end %>
 		<% end %>
 	 </div>
-	 <div class="comments">
-				<div>＜コメント一覧＞</div>
+	 			<div class="comments">
+					<div>＜コメント一覧＞</div>
 					<% @comments.each do |comment| %>
 						<p>
 							<strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
@@ -58,5 +58,4 @@
 					<% end %>
 				</div>
 		  </ul>
-
 	</div>

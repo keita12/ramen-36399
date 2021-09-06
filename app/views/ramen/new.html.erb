@@ -11,7 +11,7 @@
 		<%= f.collection_select(:star_id, Star.all, :id, :name, {}, {class:"star-select"}) %><br />
 		<%= f.submit "投稿する" ,class:"btn2" %><br>
 <% end %>
-		<%= link_to root_path do%>
+		<%= link_to :back do%>
 		<div class ='topbtn'>戻る</div>
 		<%end%>
 	</div>

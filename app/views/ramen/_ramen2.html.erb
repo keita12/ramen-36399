@@ -1,0 +1,20 @@
+<li class='list'>
+	<%= link_to raman_path(ramen.id) do%>
+		<div class='ramen-img-content'>
+			<%= image_tag ramen.image, class: 'ramen-image' if ramen.image.attached? %>
+		</div>
+	<% end %>
+	<div class = 'ramen-info'>
+		<div class = 'store'>
+				<%= '店名:' + ramen.store_name %>
+			<div class="name">
+				<%= '商品名:' + ramen.ramen_name %>
+			</div>
+			<div class="star">
+				<%= 'オススメ度:' + ramen.star.name %>
+			</div>
+		<div id="likes_buttons_<%= ramen.id %>">
+			<%= render partial: 'likes/like', locals: {ramen: ramen} %>
+		</div>
+	</div>
+</li>

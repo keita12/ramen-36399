@@ -1,12 +1,17 @@
-<div class='content'>
-		<%= @user.nickname + 'さんの投稿一覧' %>
-</div>
+<div class = 'toppege'>
+	<div class='content'>
+			<%= link_to root_path do%>
+		<button class ='topbtn'>ホームへ戻る</button>
+		<%end%><br>
+			<%= @user.nickname + 'さんの投稿一覧' %>
+	</div>
+				<ul class='ramen-contents'>
+					<%= render partial: 'ramen/ramen', collection: @user.ramens%>
+				</ul>
+	<div class='content'>
+			<%= @user.nickname + 'さんがいいねした投稿' %>
+	</div>
 			<ul class='ramen-contents'>
-				<%= render partial: 'ramen/ramen', collection: @user.ramens%>
+				<%= render partial: "ramen/ramen", collection: @like_ramens %>
 			</ul>
-<div class='content'>
-		<%= @user.nickname + 'さんがいいねした投稿' %>
 </div>
-		<ul class='ramen-contents'>
-			<%= render partial: "ramen/ramen", collection: @like_ramens %>
-		</ul>
