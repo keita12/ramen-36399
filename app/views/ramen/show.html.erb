@@ -17,7 +17,7 @@
         	<%= '感想:' + @ramen.text %>
       		</div>
 					<%end%>
-						<div class= 'like'>
+						<div id= 'likes_buttons_<%= @ramen.id %>'>
 							<%= render partial: 'likes/like', locals: {ramen: @ramen} %>
 						</div>
 				</div>
