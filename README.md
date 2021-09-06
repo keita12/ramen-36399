@@ -7,6 +7,7 @@
 
 has_many :ramen
 has_many :comments
+has_many :likes
 
 # ramen テーブル
 | Column          | Type       | Options                  |
@@ -19,6 +20,7 @@ has_many :comments
 
 belongs_to :user
 has_many :comments
+has_many :likes
 
 # comments テーブル
 | Column          | Type       | Options           |
@@ -35,3 +37,5 @@ belongs_to :ramen
 |-----------------|----------- |-------------------|
 | user            | references | foreign_key: true |
 | ramen           | references | foreign_key: true |
+belongs_to :user
+belongs_to :ramen

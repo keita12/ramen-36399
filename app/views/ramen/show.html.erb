@@ -17,9 +17,9 @@
         	<%= '感想:' + @ramen.text %>
       		</div>
 					<%end%>
-					<div id="likes_buttons_<%= @ramen.id %>">
-						<%= render partial: 'likes/like', locals: {ramen: @ramen} %>
-					</div>
+						<div class= 'like'>
+							<%= render partial: 'likes/like', locals: {ramen: @ramen} %>
+						</div>
 				</div>
 		<% if user_signed_in? && current_user.id == @ramen.user_id %>
       <ul class="showlist">
@@ -40,16 +40,16 @@
 		<div class="commentar">
     		<% if user_signed_in? %>
       <%= form_with(model: [@ramen, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %><br>
+        <%= form.text_area :text, placeholder: "コメント", rows: "2" %><br>
 		</div>
         <div class = 'btn6'>
-				<%= form.submit "送信" %>
+					<%= form.submit "送信" %>
 				</div>
       <% end %>
 		<% end %>
 	 </div>
 	 			<div class="comments">
-					<div>＜コメント一覧＞</div>
+					<div class='comment'>＜コメント一覧＞</div>
 					<% @comments.each do |comment| %>
 						<p>
 							<strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>

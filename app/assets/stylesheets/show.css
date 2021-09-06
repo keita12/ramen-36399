@@ -18,28 +18,25 @@
 	width: 350px;
 }
 .showramen-info{
-	margin-left: 30px;
+	margin-left: 80px;
 }
 
 .btn4{
 	margin-top: 15px;
 	width: 150px;
-	margin-left: 30px;
+	/* margin-left: 30px; */
 }
 .showlist{
 	list-style-type: none;
 }
 .commentar{
-	display: flex;
-  align-items: center;
-  flex-direction: column;
 	margin-top: 20px;
-	margin-right: 40px;
 }
 .btn6{
-	margin-left: 80px;
+	margin-left: 60px;
 }
 .comments{
 	width: 150px;
-	margin-left: 20px;
+}
+.like{
 }

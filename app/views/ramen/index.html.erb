@@ -11,7 +11,7 @@
 				</div>
 			<% else %>
 				<div class='logout'>
-					<%= link_to  current_user.nickname + 'さん', user_path(current_user.id), class: "user-nickname"%>
+					<%= link_to  current_user.nickname + 'さん', user_path(current_user.id), class: "topbtn1"%>
 					<%= link_to destroy_user_session_path, method: :delete do %>
 						<button class="btn">ログアウト</button>
 					<%end%>
