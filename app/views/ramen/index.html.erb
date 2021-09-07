@@ -1,5 +1,4 @@
-	<header id='header'>	
-			<script src="index.js"></script>
+<div class = 'main-header'>
 			<% unless user_signed_in? %>
 				<div class='login'>
 					<%= link_to new_user_session_path do %>
@@ -20,7 +19,7 @@
 					<%end%>
 				</div>
 			<% end %>
-	</header>
+</div>
 <div class = 'toppege'>
 		<div class='main'>
 			<%= image_tag "2-1.jpg", class:"noren" %>

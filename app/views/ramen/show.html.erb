@@ -20,7 +20,7 @@
         			<%= '感想:' + @ramen.text %>
       			</div>
 					<%end%>
-		<div class = 'showmain2'>
+	<div class = 'showmain2'>
 						<div id= 'likes_buttons_<%= @ramen.id %>'>
 							<%= render partial: 'likes/like', locals: {ramen: @ramen} %>
 						</div>
@@ -50,7 +50,6 @@
 						</div>
 					<% end %>
 				<% end %>
-			</div>
 						<div class="comments">
 							<div class='comment'>＜コメント一覧＞</div>
 							<% @comments.each do |comment| %>
@@ -61,5 +60,6 @@
 							<% end %>
 						</div>
 					</ul>
-		</div>
+			</div>
+	</div>
 

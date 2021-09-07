@@ -16,11 +16,10 @@ ul,li {
 .toppege{
 	background-image: url(haikeiga.jpeg);
 }
-.header{
-	height: 47px;
+.main-header{
+	height: 60px;
 	width: 100vw;
-	position: fixed;
-	right: 0;
+	display: inline;
 }
 .main{
 	height: 484px;
