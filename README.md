@@ -1,21 +1,36 @@
-# Re麺bar
+## Re麺bar
 
-# Re麺barの概要
+## Re麺barの概要
 
-# Re麺barのURL
+## Re麺barのURL
 
-## Web URL: https://ramen-36399.herokuapp.com/
+### Web URL: https://ramen-36399.herokuapp.com/
 
-# テスト用アカウント
-## Basic認証
-- ユーザー名: keita
-- パスワード: 0323
+## テスト用アカウント
+### Basic認証
+- ID: keita
+- PASS: 0323
 
-## ログイン用アカウント
-- 
-- 
+### ログイン用アカウント
+- メールアドレス: test@test
+- パスワード: 123456
 
-# 利用方法
+## 利用方法
+
+## 目指した課題解決
+
+## 要件定義
+### データベース設計
+### Basic認証
+### ユーザ管理機能
+### 投稿機能
+### 投稿の一覧表示機能
+### 投稿の詳細表示機能
+### 投稿の編集機能
+### 投稿の削除機能
+### いいね機能
+### 検索機能
+### 投稿者の詳細ページ
 
 
 
@@ -23,9 +38,10 @@
 
 
 
-# テーブル設計
 
-## users テーブル
+## テーブル設計
+
+### users テーブル
 | Column          | Type       | Options                  |
 |-----------------|----------- |--------------------------|
 | nickname        | string     | null: false              |
@@ -38,7 +54,7 @@
 - has_many :comments
 - has_many :likes
 
-## ramen テーブル
+### ramen テーブル
 | Column          | Type       | Options                  |
 |-----------------|----------- |--------------------------|
 | store_name      | string     | null: false              |
@@ -53,7 +69,7 @@ belongs_to :user
 has_many :comments
 has_many :likes
 
-## comments テーブル
+### comments テーブル
 | Column          | Type       | Options           |
 |-----------------|----------- |-------------------|
 | user            | references | foreign_key: true |
@@ -65,7 +81,7 @@ has_many :likes
 - belongs_to :user
 - belongs_to :ramen
 
-## likes テーブル
+### likes テーブル
 | Column          | Type       | Options           |
 |-----------------|----------- |-------------------|
 | user            | references | foreign_key: true |
