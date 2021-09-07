@@ -2,11 +2,10 @@
 
 }
 .showmain2{
-	height: 1000px;
 	display: flex;
   align-items: center;
   flex-direction: column;
-	background-image: url(pic1.jpg);
+	background-image: url(haikeiga.jpg);
 
 }
 .showuser{
@@ -18,13 +17,21 @@
 	width: 350px;
 }
 .showramen-info{
-	margin-left: 80px;
+	margin-left: 40px;
 }
 
 .btn4{
 	margin-top: 15px;
 	width: 150px;
 	/* margin-left: 30px; */
+}
+.showtext{
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+	font-size: 20px;
+	width: 600px;
+
 }
 .showlist{
 	list-style-type: none;
@@ -37,6 +44,7 @@
 }
 .comments{
 	width: 150px;
+	margin-left: 20px;
 }
 .like{
 }

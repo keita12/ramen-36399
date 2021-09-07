@@ -6,7 +6,8 @@ class Ramen < ApplicationRecord
 	def self.search(search)
     if search != ""
       Ramen.where('store_name LIKE(?)', "%#{search}%")
-			Ramen.where('ramen_name LIKE(?)', "%#{search}%")
+		# elsif search != ""
+		# 	Ramen.where('ramen_name LIKE(?)', "%#{search}%")
     else
       Ramen.all
     end

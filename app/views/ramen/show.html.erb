@@ -5,57 +5,61 @@
 				</div>
 				<div class = 'showramen-info'>
 					<div class = 'store'>
-					<%= '店名:' + @ramen.store_name %>
+						<%= '店名:' + @ramen.store_name %>
 					<div class="showname">
-        	<%= '商品名:' + @ramen.ramen_name %>
+        		<%= '商品名:' + @ramen.ramen_name %>
       		</div>
 					<div class="showstar">
-        	<%= 'オススメ度:' + @ramen.star.name %>
+        		<%= 'オススメ度:' + @ramen.star.name %>
       		</div>
+				</div>
+
+	</div>
 					<%if @ramen.text!= '' %>
-					<div class="showtext">
-        	<%= '感想:' + @ramen.text %>
-      		</div>
+						<div class="showtext">
+        			<%= '感想:' + @ramen.text %>
+      			</div>
 					<%end%>
+		<div class = 'showmain2'>
 						<div id= 'likes_buttons_<%= @ramen.id %>'>
 							<%= render partial: 'likes/like', locals: {ramen: @ramen} %>
 						</div>
-				</div>
-		<% if user_signed_in? && current_user.id == @ramen.user_id %>
-      <ul class="showlist">
-        <li>
-          <%= link_to edit_raman_path(@ramen.id), method: :get do %>
-					<button class="btn4">編集</button>
+				<% if user_signed_in? && current_user.id == @ramen.user_id %>
+					<ul class="showlist">
+						<li>
+							<%= link_to edit_raman_path(@ramen.id), method: :get do %>
+							<button class="btn4">編集</button>
+							<%end%>
+						</li>
+						<li>
+							<%= link_to raman_path(@ramen.id), method: :delete do %>
+							<button class="btn4">削除</button>
+							<%end%>
+						</li>
+				<% end %>
+					<%= link_to root_path do%>
+							<button class="btn4">ホームへ戻る</button>
 					<%end%>
-        </li>
-        <li>
-          <%= link_to raman_path(@ramen.id), method: :delete do %>
-					<button class="btn4">削除</button>
-					<%end%>
-        </li>
-    <% end %>
-			<%= link_to root_path do%>
-					<button class="btn4">ホームへ戻る</button>
-			<%end%>
-		<div class="commentar">
-    		<% if user_signed_in? %>
-      <%= form_with(model: [@ramen, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメント", rows: "2" %><br>
-		</div>
-        <div class = 'btn6'>
-					<%= form.submit "送信" %>
+				<div class="commentar">
+						<% if user_signed_in? %>
+					<%= form_with(model: [@ramen, @comment], local: true) do |form| %>
+						<%= form.text_area :text, placeholder: "コメント", rows: "2" %><br>
 				</div>
-      <% end %>
-		<% end %>
-	 </div>
-	 			<div class="comments">
-					<div class='comment'>＜コメント一覧＞</div>
-					<% @comments.each do |comment| %>
-						<p>
-							<strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
-							<%= comment.text %>
-						</p>
+						<div class = 'btn6'>
+							<%= form.submit "送信" %>
+						</div>
 					<% end %>
-				</div>
-		  </ul>
-	</div>
+				<% end %>
+			</div>
+						<div class="comments">
+							<div class='comment'>＜コメント一覧＞</div>
+							<% @comments.each do |comment| %>
+								<p>
+									<strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+									<%= comment.text %>
+								</p>
+							<% end %>
+						</div>
+					</ul>
+		</div>
+
