@@ -27,38 +27,45 @@
 - いいね機能の実装を非同期通信で実装したこと
 - 投稿がメインなのでシンプルなデザインで仕上げたこと
 ## 要件定義
-### デプロイ
-### データベース設計
-### Basic認証
-### ユーザ管理機能
-### 投稿機能
-### 投稿の一覧表示機能
-### 投稿の詳細表示機能
-### 投稿の編集機能
-### 投稿の削除機能
-### コメント機能
-### いいね機能
-### 検索機能
-### 投稿者のマイページの実装
+- デプロイ
+- データベース設計
+- Basic認証
+- ユーザ管理機能
+- 投稿機能
+- 投稿の一覧表示機能
+- 投稿の詳細表示機能
+- 投稿の編集機能
+- 投稿の削除機能
+- コメント機能
+- いいね機能
+- 検索機能
+- 投稿者のマイページの実装
 
 # 実装機能
 ### 投稿機能
-[![Image from Gyazo](https://i.gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b.gif)](https://gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b)
+[![demo](https://i.gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b.gif)](https://gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b)
 
 ### 投稿の一覧表示機能
-[![Image from Gyazo](https://i.gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d.gif)](https://gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d)
+[![demo](https://i.gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d.gif)](https://gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d)
+
 ### 投稿の詳細表示機能
-[![Image from Gyazo](https://i.gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3.jpg)](https://gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3)
+[![demo](https://i.gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3.jpg)](https://gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3)
+
 ### 投稿の編集機能
-[![Image from Gyazo](https://i.gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406.gif)](https://gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406)
+[![demo](https://i.gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406.gif)](https://gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406)
+
 ### 投稿の削除機能
-[![Image from Gyazo](https://i.gyazo.com/fed13a03cdb5ddf2c938de5fa4c7eafb.gif)](https://gyazo.com/fed13a03cdb5ddf2c938de5fa4c7eafb)
+[![demo](https://i.gyazo.com/fed13a03cdb5ddf2c938de5fa4c7eafb.gif)](https://gyazo.com/fed13a03cdb5ddf2c938de5fa4c7eafb)
+
 ### コメント機能
-[![Image from Gyazo](https://i.gyazo.com/10e1f27d06fd515ef96e72410543ba6a.gif)](https://gyazo.com/10e1f27d06fd515ef96e72410543ba6a)
+[![demo](https://i.gyazo.com/10e1f27d06fd515ef96e72410543ba6a.gif)](https://gyazo.com/10e1f27d06fd515ef96e72410543ba6a)
+
 ### いいね機能
-[![Image from Gyazo](https://i.gyazo.com/4b8e9142fc45a61bb80ef1480ea2243b.gif)](https://gyazo.com/4b8e9142fc45a61bb80ef1480ea2243b)
+[![demo](https://i.gyazo.com/4b8e9142fc45a61bb80ef1480ea2243b.gif)](https://gyazo.com/4b8e9142fc45a61bb80ef1480ea2243b)
+
 ### 検索機能
-[![Image from Gyazo](https://i.gyazo.com/2211d83c99205984890b0469e15963d6.gif)](https://gyazo.com/2211d83c99205984890b0469e15963d6)
+[![demo](https://i.gyazo.com/2211d83c99205984890b0469e15963d6.gif)](https://gyazo.com/2211d83c99205984890b0469e15963d6)
+
 ## テーブル設計
 
 ### users テーブル
@@ -111,3 +118,4 @@ has_many :likes
 
 - belongs_to :user
 - belongs_to :ramen
+
