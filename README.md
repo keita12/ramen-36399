@@ -52,7 +52,7 @@
 [![demo](https://i.gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b.gif)](https://gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b)
 
 ### 投稿の一覧表示機能
-[![Image from Gyazo](https://i.gyazo.com/4b8317f1b7603311c57ce3918dd1fd88.gif)](https://gyazo.com/4b8317f1b7603311c57ce3918dd1fd88)
+[![Image](https://i.gyazo.com/4b8317f1b7603311c57ce3918dd1fd88.gif)](https://gyazo.com/4b8317f1b7603311c57ce3918dd1fd88)
 
 ### 投稿の詳細表示機能
 [![demo](https://i.gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3.jpg)](https://gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3)
@@ -61,16 +61,16 @@
 [![demo](https://i.gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406.gif)](https://gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406)
 
 ### 投稿の削除機能
-[![Image from Gyazo](https://i.gyazo.com/6d6040de363b776c5334f004385d6359.gif)](https://gyazo.com/6d6040de363b776c5334f004385d6359)
+[![Image](https://i.gyazo.com/6d6040de363b776c5334f004385d6359.gif)](https://gyazo.com/6d6040de363b776c5334f004385d6359)
 
 ### コメント機能
 [![demo](https://i.gyazo.com/10e1f27d06fd515ef96e72410543ba6a.gif)](https://gyazo.com/10e1f27d06fd515ef96e72410543ba6a)
 
 ### いいね機能
-[![Image from Gyazo](https://i.gyazo.com/667aa36c222c127c80af4ad73c84682a.gif)](https://gyazo.com/667aa36c222c127c80af4ad73c84682a)
+[![Image](https://i.gyazo.com/667aa36c222c127c80af4ad73c84682a.gif)](https://gyazo.com/667aa36c222c127c80af4ad73c84682a)
 
 ### 検索機能
-[![Image from Gyazo](https://i.gyazo.com/9ee85e347a3b58f1b714181c61e3680f.gif)](https://gyazo.com/9ee85e347a3b58f1b714181c61e3680f)
+[![Image](https://i.gyazo.com/9ee85e347a3b58f1b714181c61e3680f.gif)](https://gyazo.com/9ee85e347a3b58f1b714181c61e3680f)
 
 ## 実装予定の機能
 - いいねの数によるランキング機能
