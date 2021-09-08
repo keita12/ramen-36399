@@ -49,29 +49,21 @@
 
 # 実装機能
 ## 投稿機能
-[![demo](https://i.gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b.gif)](https://gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b)
-
+[![Image from Gyazo](https://i.gyazo.com/e02394959e95b158f01995abc0bec78e.gif)](https://gyazo.com/e02394959e95b158f01995abc0bec78e)
 ## 投稿の一覧表示機能
-[![Image](https://i.gyazo.com/4b8317f1b7603311c57ce3918dd1fd88.gif)](https://gyazo.com/4b8317f1b7603311c57ce3918dd1fd88)
-
+[![Image from Gyazo](https://i.gyazo.com/56e44d3931cd9923815c7db2609d4599.gif)](https://gyazo.com/56e44d3931cd9923815c7db2609d4599)
 ## 投稿の詳細表示機能
-[![demo](https://i.gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3.jpg)](https://gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3)
-
+[![Image from Gyazo](https://i.gyazo.com/da3470f262880526966decb046ad5e9b.gif)](https://gyazo.com/da3470f262880526966decb046ad5e9b)
 ## 投稿の編集機能
-[![demo](https://i.gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406.gif)](https://gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406)
-
+[![Image from Gyazo](https://i.gyazo.com/c9936daf99c0fea5efed37ecb3096a24.gif)](https://gyazo.com/c9936daf99c0fea5efed37ecb3096a24)
 ## 投稿の削除機能
-[![Image](https://i.gyazo.com/6d6040de363b776c5334f004385d6359.gif)](https://gyazo.com/6d6040de363b776c5334f004385d6359)
-
+[![Image from Gyazo](https://i.gyazo.com/6e15733cdb98158deff9672cf697c5df.gif)](https://gyazo.com/6e15733cdb98158deff9672cf697c5df)
 ## コメント機能
-[![demo](https://i.gyazo.com/10e1f27d06fd515ef96e72410543ba6a.gif)](https://gyazo.com/10e1f27d06fd515ef96e72410543ba6a)
-
+[![Image from Gyazo](https://i.gyazo.com/f0d79177f5455671ab7208077b7f5e77.gif)](https://gyazo.com/f0d79177f5455671ab7208077b7f5e77)
 ## いいね機能
-[![Image](https://i.gyazo.com/667aa36c222c127c80af4ad73c84682a.gif)](https://gyazo.com/667aa36c222c127c80af4ad73c84682a)
-
+[![Image from Gyazo](https://i.gyazo.com/fdfabd82f2426a5648a91fb7cbc59263.gif)](https://gyazo.com/fdfabd82f2426a5648a91fb7cbc59263)
 ## 検索機能
-[![Image](https://i.gyazo.com/9ee85e347a3b58f1b714181c61e3680f.gif)](https://gyazo.com/9ee85e347a3b58f1b714181c61e3680f)
-
+[![Image from Gyazo](https://i.gyazo.com/9017a3f70fdd93e03c87c48d76b2b370.gif)](https://gyazo.com/9017a3f70fdd93e03c87c48d76b2b370)
 ## 実装予定の機能
 - いいねの数によるランキング機能
 
