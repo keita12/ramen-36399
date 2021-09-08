@@ -23,13 +23,15 @@
 ### まず初めにログインします。
 ### ログインすると投稿機能とコメント機能といいね機能が利用できるようになります。
 ### それ以外のや検索機能や投稿詳細ページや投稿者の詳細ページや投稿の一覧表示はログインしていなくても利用することができます。
-## 目指した課題解決
 
+## 目指した課題解決
+- 美味しいラーメン屋を簡単に探したい人
+- 美味しいラーメン屋が見つかったけれど店についてもっと詳しく知りたい。
 ## 工夫した点
 - いいね機能の実装を非同期通信で実装したこと
-- 投稿がメインなのでシンプルなデザインで仕上げたこと
-- 
-- 
+- 投稿がメインなのでシンプルなデザインにこだわって仕上げたこと
+- エラー文を日本語標記にしたこと
+
 ## 要件定義
 - デプロイ
 - データベース設計
@@ -50,7 +52,7 @@
 [![demo](https://i.gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b.gif)](https://gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b)
 
 ### 投稿の一覧表示機能
-[![demo](https://i.gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d.gif)](https://gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d)
+[![Image from Gyazo](https://i.gyazo.com/4b8317f1b7603311c57ce3918dd1fd88.gif)](https://gyazo.com/4b8317f1b7603311c57ce3918dd1fd88)
 
 ### 投稿の詳細表示機能
 [![demo](https://i.gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3.jpg)](https://gyazo.com/c94d5e63eeeb5d9dd86d208614a009f3)
@@ -59,16 +61,19 @@
 [![demo](https://i.gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406.gif)](https://gyazo.com/b89466093b0ea2f8ec0fe4a056c9a406)
 
 ### 投稿の削除機能
-[![demo](https://i.gyazo.com/fed13a03cdb5ddf2c938de5fa4c7eafb.gif)](https://gyazo.com/fed13a03cdb5ddf2c938de5fa4c7eafb)
+[![Image from Gyazo](https://i.gyazo.com/6d6040de363b776c5334f004385d6359.gif)](https://gyazo.com/6d6040de363b776c5334f004385d6359)
 
 ### コメント機能
 [![demo](https://i.gyazo.com/10e1f27d06fd515ef96e72410543ba6a.gif)](https://gyazo.com/10e1f27d06fd515ef96e72410543ba6a)
 
 ### いいね機能
-[![demo](https://i.gyazo.com/4b8e9142fc45a61bb80ef1480ea2243b.gif)](https://gyazo.com/4b8e9142fc45a61bb80ef1480ea2243b)
+[![Image from Gyazo](https://i.gyazo.com/667aa36c222c127c80af4ad73c84682a.gif)](https://gyazo.com/667aa36c222c127c80af4ad73c84682a)
 
 ### 検索機能
-[![demo](https://i.gyazo.com/2211d83c99205984890b0469e15963d6.gif)](https://gyazo.com/2211d83c99205984890b0469e15963d6)
+[![Image from Gyazo](https://i.gyazo.com/9ee85e347a3b58f1b714181c61e3680f.gif)](https://gyazo.com/9ee85e347a3b58f1b714181c61e3680f)
+
+## 実装予定の機能
+- いいねの数によるランキング機能
 
 ## テーブル設計
 
