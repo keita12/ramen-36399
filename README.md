@@ -1,6 +1,8 @@
-## Re麺bar
+# Re麺bar
 
 ## Re麺barの概要
+
+### ラーメンの写真の投稿が可能
 
 ## Re麺barのURL
 
