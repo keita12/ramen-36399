@@ -64,6 +64,16 @@
 [![Image from Gyazo](https://i.gyazo.com/fdfabd82f2426a5648a91fb7cbc59263.gif)](https://gyazo.com/fdfabd82f2426a5648a91fb7cbc59263)
 ## 検索機能
 [![Image from Gyazo](https://i.gyazo.com/9017a3f70fdd93e03c87c48d76b2b370.gif)](https://gyazo.com/9017a3f70fdd93e03c87c48d76b2b370)
+
+## 使用技術
+- HTML
+- CSS
+- Ruby
+- Rails
+- JavaScript
+## 開発環境
+- GitHub
+- MYSQL
 ## 実装予定の機能
 - いいねの数によるランキング機能
 
