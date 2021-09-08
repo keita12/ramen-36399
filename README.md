@@ -42,6 +42,7 @@
 # 実装機能
 ### 投稿機能
 [![Image from Gyazo](https://i.gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b.gif)](https://gyazo.com/c9e405ffe6bbba8c19f1062dfb5e093b)
+
 ### 投稿の一覧表示機能
 [![Image from Gyazo](https://i.gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d.gif)](https://gyazo.com/e94a4b423d1dbd8bbe5ef34c6dd5669d)
 ### 投稿の詳細表示機能
