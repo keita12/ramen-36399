@@ -73,7 +73,7 @@
 - JavaScript
 ## 開発環境
 - GitHub
-- MYSQL
+- Sequel Pro
 ## 実装予定の機能
 - いいねの数によるランキング機能
 

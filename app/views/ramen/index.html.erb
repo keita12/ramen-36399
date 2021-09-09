@@ -1,6 +1,7 @@
-<div class = 'main-header'>
+<%# <div class = 'main-header'> %>
 			<% unless user_signed_in? %>
 				<div class='login'>
+						<div class="sample">Re麺bar</div>
 					<%= link_to new_user_session_path do %>
 						<button class="btn">ログイン</button>
 					<%end%>
@@ -10,6 +11,8 @@
 				</div>
 			<% else %>
 				<div class='logout'>
+					<div class="sample">Re麺bar	</div>
+
 					<%= link_to  current_user.nickname + 'さん', user_path(current_user.id), class: "topbtn1"%>
 					<%= link_to destroy_user_session_path, method: :delete do %>
 						<button class="btn">ログアウト</button>
@@ -19,7 +22,7 @@
 					<%end%>
 				</div>
 			<% end %>
-</div>
+<%# </div> %>
 <div class = 'toppege'>
 		<div class='main'>
 			<%= image_tag "2-1.jpg", class:"noren" %>
@@ -30,10 +33,12 @@
 			</div>
 	<div class= 'main-contents'>			
 			<div class='content'>投稿一覧</div>
-			<%= form_with(url: search_ramen_path, local: true, method: :get, class: "search-form") do |form| %>
-				<%= form.text_field :keyword, placeholder: "店名を検索する", class: "search-input" %>
-				<%= form.submit "検索", class: "search-btn" %>
-			<% end %>
+			<div class ='search'>
+				<%= form_with(url: search_ramen_path, local: true, method: :get, class: "search-form") do |form| %>
+					<%= form.text_field :keyword, placeholder: "店名を検索する", class: "search-input" %>
+					<%= form.submit "検索", class: "search-btn" %>
+				<% end %>
+			</div>
 			<ul class='ramen-contents'>
 				<% @ramen.each do |ramen| %>
 				<li class='list'>
