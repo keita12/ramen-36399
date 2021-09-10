@@ -1,28 +1,27 @@
 # Re麺bar
 
-## Re麺barの概要
+## 概要
 
 #### ラーメンの写真の投稿ができます。
 #### 投稿に対してコメントやいいねを受け取ることができます。
 #### 検索機能や投稿一覧から簡単に美味しいラーメン屋を探せます！
 
-## Re麺barのURL
+## 本番環境
 
 ### Web URL: https://ramen-36399.herokuapp.com/
 
-## テスト用アカウント
 ### Basic認証
 - ID: keita
 - PASS: 0323
 
-### ログイン用アカウント
+### ログイン情報(テスト用)
 - メールアドレス: test@test
 - パスワード: 123456
 
 ## 利用方法
 ### まず初めにログインします。
 ### ログインすると投稿機能とコメント機能といいね機能が利用できるようになります。
-### それ以外のや検索機能や投稿詳細ページや投稿者の詳細ページや投稿の一覧表示はログインしていなくても利用することができます。
+### それ以外の検索機能や投稿詳細ページや投稿者の詳細ページや投稿の一覧表示はログインしていなくても利用することができます。
 
 ## 目指した課題解決
 - 美味しいラーメン屋を簡単に探したい人。
@@ -46,13 +45,14 @@
 - いいね機能
 - 検索機能
 - 投稿者のマイページの実装
+- S3の導入
 
 # 実装機能
 ## 投稿機能
 [![Image from Gyazo](https://i.gyazo.com/e02394959e95b158f01995abc0bec78e.gif)](https://gyazo.com/e02394959e95b158f01995abc0bec78e)
 ## 投稿の一覧表示機能
 [![Image from Gyazo](https://i.gyazo.com/56e44d3931cd9923815c7db2609d4599.gif)](https://gyazo.com/56e44d3931cd9923815c7db2609d4599)
-## 投稿の詳細表示機能
+## 投稿の詳細画面
 [![Image from Gyazo](https://i.gyazo.com/da3470f262880526966decb046ad5e9b.gif)](https://gyazo.com/da3470f262880526966decb046ad5e9b)
 ## 投稿の編集機能
 [![Image from Gyazo](https://i.gyazo.com/c9936daf99c0fea5efed37ecb3096a24.gif)](https://gyazo.com/c9936daf99c0fea5efed37ecb3096a24)
@@ -66,17 +66,20 @@
 [![Image from Gyazo](https://i.gyazo.com/9017a3f70fdd93e03c87c48d76b2b370.gif)](https://gyazo.com/9017a3f70fdd93e03c87c48d76b2b370)
 
 ## 使用技術
-- HTML
-- CSS
-- Ruby
-- Rails
-- JavaScript
-## 開発環境
-- GitHub
-- Sequel Pro
-## 実装予定の機能
-- いいねの数によるランキング機能
-
+### バックエンド
+Ruby,Ruby on rails 
+### フロントエンド
+JavaScript,JQuery
+### データベース
+MySQL,SeaquelPro
+### インフラ
+AWS(EC2)
+### ソース管理
+GitHub,GitHubDesktop
+### テスト
+RSpec
+### エディタ
+VSCode
 ## DB設計
 
 ### users テーブル
